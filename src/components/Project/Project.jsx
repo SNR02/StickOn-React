@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 
 import '../../styles/project.css';
 
-import projectsData from "../../pages/projectsData";
+import projectsData from "../../Data/projectsData";
 
 
 export default function Project() {
