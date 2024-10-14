@@ -47,7 +47,7 @@ export default function Projects() {
     }, []);
   return (
     <section className='projects' id="projects">
-      <div className="container-fluid mt-5">
+      <div className="container-fluid">
         <h1 className="projects-heading" data-i18n-key="our-projects">Our Projects</h1>
         <div className="slider">
           <div className="owl-carousel">

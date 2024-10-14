@@ -1192,7 +1192,7 @@ footer{
   } 
 
   .home{
-    padding: 8rem 0;
+    padding: 4rem 0 2rem 0;
   }
   .home-left .main-content{
     font-size: 2.2rem;
@@ -1208,9 +1208,10 @@ footer{
 
   .choose-us{
     height: auto;
+    padding: 3rem 0;
   }
-  .cu-s1{
-    margin: 4rem 0;
+  .cu-s2{
+    margin-bottom: 2rem;
   }
   .cu-s3{
     padding: 3rem 0;
@@ -1237,6 +1238,10 @@ footer{
     width:300px;
   }
 
+  .projects{
+    margin-top:2rem;
+  }
+
 
   .contact-wrapper{
     flex-direction: column;
@@ -1247,7 +1252,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
   .c1 p{
     text-align: center;
@@ -1256,6 +1261,11 @@ footer{
   .c2{
     width: 90%;
   }
+
+  .subscribe-section{
+    max-width:600px;
+  }
+
 
   .footer-container{
     flex-direction: column;
@@ -1368,21 +1378,28 @@ footer{
   .ts1 h2{
     font-size:2.5rem;
   }
-  
+
+  .slider{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .slider-card{
+    margin: 1rem 0;
+  }
   .slider .owl-item.active.center{
     transform: scale(1) !important;
   }
   .slider .owl-item{
     transform: scale(1) !important;
   }
-  .slider-card{
-    margin-bottom: 35px;
-  }
   .project-title{
     margin-top: -2rem;
   }
   .owl-nav{
     display: none;
+  }
+  .owl-dots{
+    margin-top: 1rem;
   }
 
   .contact-details{
@@ -1395,7 +1412,18 @@ footer{
 
 @media(max-width: 500px){
   .home-left .main-content{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+  }
+  .cu-s2 h2{
+    font-size: 1.3rem;
+  }
+  .text-block{
+    padding-top:0;
+    padding-bottom:0;
+  }
+  .cu-s3-card p{
+    line-height: 1.5rem;
+    font-size: 0.9rem;
   }
   .sec-name{
     display: block;
@@ -1446,6 +1474,10 @@ footer{
     font-size: 0.9rem;
   }
 
+  .projects{
+    padding: 0 2rem;
+  }
+  
   .project-block {
     flex: 0 0 200px;
     height: 150px;
@@ -1462,6 +1494,9 @@ footer{
 
   .form-container{
     padding: 1.5rem;
+  }
+  .c2{
+    padding: 0;
   }
 
   .contact-details{
@@ -1484,11 +1519,11 @@ footer{
 @media (max-width: 400px){
 
   .home-left .main-content{
-    font-size: 1.2rem;
+    font-size: 1.31rem;
     line-height: 1.7rem;
   }
   .home-left .main-subtext{
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.2rem;
   }
   
@@ -1516,8 +1551,8 @@ footer{
     font-size:1.7rem;
   }
   .ts1 p{
-    font-size: .8rem;
-    line-height: 1rem;
+    font-size: .9rem;
+    line-height: 1.2rem;
   }
   
 
