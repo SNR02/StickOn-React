@@ -3,7 +3,7 @@ import SOMainLogo from '../../assets/SO_Main.png'
 import { Link } from 'react-router-dom'
 import LocationImg from '../../assets/footer/locationImg.png'
 import MailImg from '../../assets/footer/mailImg.png'
-import TelephoneImg from '../../assets/footer/TelephoneImg.png'
+import TelephoneImg from '../../assets/footer/telephoneImg.png'
 
 export default function Footer() {
   return (
