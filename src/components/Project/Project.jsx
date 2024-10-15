@@ -171,7 +171,7 @@ export default function Project() {
           {projectsData[projectIdx].videoLink && 
           <div className="walkthrough">
             <h2>Application Walkthrough</h2>
-            <video ref={videoRef}>
+            <video ref={videoRef} controls>
             <source
                 src={projectsData[projectIdx].videoLink || ''}
                 autoFocus="off"
