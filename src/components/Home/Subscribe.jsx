@@ -17,10 +17,15 @@ export default function Subscribe() {
     const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    setStatus('');
     };
 
     const handleSubmit = async (e) => {
     e.preventDefault();
+    if(!formData.email){
+        setStatus('empty');
+        return;
+    }
     try {
         const response = await fetch(import.meta.env.VITE_SERVER_URL, {
         method: 'POST',
@@ -92,6 +97,13 @@ export default function Subscribe() {
         <div className="form-success" tabIndex="-1" role="region">
             <div data-i18n-key="contact-form-success">
             Thank you! Your submission has been received!
+            </div>
+        </div>
+        )}
+        {status === 'empty' && (
+        <div className="form-fail" tabIndex="-1" role="region">
+            <div data-i18n-key="contact-form-failure">
+            Please enter your Email
             </div>
         </div>
         )}
