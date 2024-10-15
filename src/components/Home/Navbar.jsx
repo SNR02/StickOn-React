@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Logo from '../../assets/SO_main.png';
+import Logo from '../../assets/SO_Main.png';
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
