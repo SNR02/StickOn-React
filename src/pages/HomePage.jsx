@@ -12,7 +12,6 @@ import Footer from '../components/Home/Footer'
 import { createGlobalStyle } from 'styled-components';
 
 import '../styles/index.css'
-import '../styles/owl.carousel.min.css'
 import Industries from '../components/Home/Industries/Industries'
 
 const GlobalStyle = createGlobalStyle`

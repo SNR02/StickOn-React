@@ -426,6 +426,7 @@ nav .nav-items li a:hover{
   font-weight: 550;
   font-size: 3rem;
   color: #DA3960;
+  margin-bottom: 3rem;
 }
 
 .project-info {
@@ -452,11 +453,11 @@ nav .nav-items li a:hover{
 
 .project-info h3 {
   margin-bottom: 10px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .project-info p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: white;
 }
 
@@ -467,17 +468,8 @@ nav .nav-items li a:hover{
   width: 100%;
 }
 
-.slider .owl-item{
-  transform: scale(0.9) !important;
-}
-
-.slider .owl-item.active.center{
-  transform: scale(1.3) !important;
-  transition: all 0.3s;
-}
 
 .slider .owl-item.active.center .slider-card {
-  
   opacity: 1;
   background: #d2d2d2; /* fallback for old browsers */
   color: #fff;
@@ -496,7 +488,6 @@ nav .nav-items li a:hover{
   margin: 50px 15px 65px 15px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-  opacity: 0.5;
 }
 
 .slider-card:hover .project-info {
@@ -538,6 +529,24 @@ nav .nav-items li a:hover{
 .owl-dots .owl-dot.active {
   background: #c93357 !important;
 }
+
+
+.owl-carousel .owl-item{
+  transform:scale(0.9);
+}
+.owl-carousel .owl-item.active.center {
+  transform: scale(1.3); 
+  transition: transform 0.3s ease-in-out;
+}
+.owl-carousel .owl-item {
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+.owl-carousel .owl-item.active.center {
+  opacity: 1;
+}
+
+
 
 /*-----------Contact--------------*/
 
@@ -1386,11 +1395,11 @@ footer{
   .slider-card{
     margin: 1rem 0;
   }
-  .slider .owl-item.active.center{
-    transform: scale(1) !important;
+  .owl-carousel .owl-item{
+    transform:scale(1);
   }
-  .slider .owl-item{
-    transform: scale(1) !important;
+  .owl-carousel .owl-item.active.center {
+    transform: scale(1); 
   }
   .project-title{
     margin-top: -2rem;
